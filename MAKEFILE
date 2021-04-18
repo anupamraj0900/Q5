@@ -1,0 +1,10 @@
+
+ 
+CC=gcc  #compiler
+TARGET=main #target file name
+ 
+all:    main.o mainFile.o
+    $(CC) main.c mainFile.c -o $(TARGET)
+ 
+clean:
+    rm *.o $(TARGET)
